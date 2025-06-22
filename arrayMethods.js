@@ -46,3 +46,36 @@ let programs = ['JavaScript', 'Python', 'Java'];
 programs.forEach((program) => {
     console.log("Program:" + program);
 });
+
+// 11. every() -> tests whether all elements in the array pass the test implemented by the provided function
+let nums = [2, 4, 6, 8, 10, 13];
+let allEven = nums.every((e) => e %2 ===0);
+console.log("Are all numbers even?", allEven);
+
+// 2. some() -> tests whether at least one element in the array passes the test implemented by the provided function
+let someEven = nums.some((e) => e %2 ===0);
+console.log("Are some numbers even?", someEven);
+
+// 3. find() -> returns the value of the first element in the array that satisfies the provided testing function. Otherwise, undefined is returned.
+let foundEven = nums.find((e) => e % 2 === 0);
+console.log("First even number found:", foundEven);
+
+// 4. indexOf() -> returns the first index at which a given element can be found in the array, or -1 if it is not present
+let indexOfFive = nums.indexOf(5);
+console.log("Index of 5 in nums:", indexOfFive);
+
+// 5. lastIndexOf()
+let lastIndexOfFive = nums.lastIndexOf(5);
+console.log("Last index of 5 in nums:", lastIndexOfFive);
+
+// 6. reverse() -> reverses the elements of an array in place
+let reversedArray = nums.reverse();
+console.log("Reversed nums:", reversedArray);
+
+// 7. sort() -> sorts the elements of an array in place and returns the sorted array
+let sortedArray = nums.sort((a, b) => a - b); // ascending order
+console.log("Sorted nums:", sortedArray);   
+let sortedArrayDesc = nums.sort((a, b) => b - a); // descending order
+console.log("Sorted nums in descending order:", sortedArrayDesc);
+
+
